@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <include layout="@layout/jlyy_titlebar" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/title_bar"
+            android:progressDrawable="@drawable/pg"
+            android:visibility="gone"/>
+        <!--ProgressBar设置只有在加载过程中才会显示，所以初始状态是gone-->
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/progressBar">
+
+        </WebView>
+
+</LinearLayout>

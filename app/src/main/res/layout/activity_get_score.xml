@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.testloginscau.activity.GetScoreActivity">
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerfirst"
+        android:layout_alignTop="@+id/textView60"
+        android:layout_toRightOf="@+id/textView60"
+        android:layout_toEndOf="@+id/textView60" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnersecond"
+        android:layout_alignTop="@+id/textView61"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学年："
+        android:textSize="17sp"
+        android:id="@+id/textView60"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学期："
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:id="@+id/textView61"
+        android:layout_alignTop="@+id/spinnerfirst"
+        android:layout_toLeftOf="@+id/spinnersecond"
+        android:layout_toStartOf="@+id/spinnersecond" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnersecond"
+        android:layout_alignRight="@+id/spinnersecond"
+        android:layout_alignEnd="@+id/spinnersecond"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查 询"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:id="@+id/commit" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
